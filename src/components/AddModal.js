@@ -17,7 +17,7 @@ import { addCompany } from "../store/actions";
 import { connect } from "react-redux";
 
 const AddModal = (props) => {
-  const { buttonLabel, className } = props;
+  const { className } = props;
 
   const [name, setName] = useState({
     company: "",

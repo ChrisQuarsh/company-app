@@ -10,14 +10,13 @@ import {
   Input,
   Label,
   CustomInput,
-  ListGroupItem,
 } from "reactstrap";
-import uuid from "react-uuid";
+
 import { editCompany } from "../store/actions";
 import { connect } from "react-redux";
 
 const EditModal = (props) => {
-  const { buttonLabel, className } = props;
+  const { className } = props;
 
   const [name, setName] = useState({
     company: props.startup.company,
